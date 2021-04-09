@@ -1,0 +1,14 @@
+h2 {
+  text-align: center;
+}
+p {
+  font-style: italic;
+}
+.form-control {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5px;
+}
+.btn {
+  margin: 5%;
+}

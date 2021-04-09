@@ -8,79 +8,91 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Pizza Parlor</title>
+  <title>T's Pizza Parlor</title>
 </head>
 <body>
   <div class="container">
-    <form>
-      <select class="form-control" id="size">
-        <option value="personal">Personal (serves: 1-2)</option>
-        <option value="medium">Medium (serves: 2-4)</option>
-        <option value="large">Large (serves: 4-6)</option>
-        <option value="extra-large">Extra Large (serves: 6-8)</option>
-      </select>
-      <select class="form-control" id="topping-1">
-        <option value="0">Select a topping</option>
-        <option value="pepperoni">Pepperoni</option>
-        <option value="sausage">Sausage</option>
-        <option value="chicken">Grilled Chicken</option>
-        <option value="bacon">Chopped Bacon</option>
-        <option value="canadian-bacon">Canadian Bacon</option>
-        <option value="beef">Ground Beef</option>
-        <option value="extra-cheese">Extra Cheese</option>
-        <option value="tomatoes">Fresh Sliced Tomatoes</option>
-        <option value="mushrooms">Mushrooms</option>
-        <option value="olives">Black Olives</option>
-        <option value="spinach">Spinach</option>
-        <option value="red-onions">Red Onions</option>
-        <option value="yellow-onions">Sweet Yellow Onions</option>
-        <option value="green-peppers">Green Bell Peppers</option>
-        <option value="jalapenos">Jalapeños</option>
-        <option value="pineapple">Pineapple</option>
-        <option value="artichokes">Artichoke Hearts</option>
-      </select>
-      <select class="form-control" id="topping-2">
-        <option value="0">Select a topping</option>
-        <option value="pepperoni">Pepperoni</option>
-        <option value="sausage">Sausage</option>
-        <option value="chicken">Grilled Chicken</option>
-        <option value="bacon">Chopped Bacon</option>
-        <option value="canadian-bacon">Canadian Bacon</option>
-        <option value="beef">Ground Beef</option>
-        <option value="extra-cheese">Extra Cheese</option>
-        <option value="tomatoes">Fresh Sliced Tomatoes</option>
-        <option value="mushrooms">Mushrooms</option>
-        <option value="olives">Black Olives</option>
-        <option value="spinach">Spinach</option>
-        <option value="red-onions">Red Onions</option>
-        <option value="yellow-onions">Sweet Yellow Onions</option>
-        <option value="green-peppers">Green Bell Peppers</option>
-        <option value="jalapenos">Jalapeños</option>
-        <option value="pineapple">Pineapple</option>
-        <option value="artichokes">Artichoke Hearts</option>
-      </select>
-      <select class="form-control" id="topping-3">
-        <option value="0">Select a topping</option>
-        <option value="pepperoni">Pepperoni</option>
-        <option value="sausage">Sausage</option>
-        <option value="chicken">Grilled Chicken</option>
-        <option value="bacon">Chopped Bacon</option>
-        <option value="canadian-bacon">Canadian Bacon</option>
-        <option value="beef">Ground Beef</option>
-        <option value="extra-cheese">Extra Cheese</option>
-        <option value="tomatoes">Fresh Sliced Tomatoes</option>
-        <option value="mushrooms">Mushrooms</option>
-        <option value="olives">Black Olives</option>
-        <option value="spinach">Spinach</option>
-        <option value="red-onions">Red Onions</option>
-        <option value="yellow-onions">Sweet Yellow Onions</option>
-        <option value="green-peppers">Green Bell Peppers</option>
-        <option value="jalapenos">Jalapeños</option>
-        <option value="pineapple">Pineapple</option>
-        <option value="artichokes">Artichoke Hearts</option>
-      </select>
-      <button type="submit" class="btn btn-primary">Order!</button>
-    </form>
+    <div class="jumbotron">
+      <h1>Welcome to T's Pizza Parlor!</h1>
+      <p>Your friendly neighborhood pizza spot is now accepting orders for pick-up or delivery!</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <h2 class="card-title">Build your own pizza!</h2>
+          <form class="card-text">
+            <select class="form-control" id="size">
+              <option value="select">Select a size</option>
+              <option value="personal">Personal (serves: 1-2)</option>
+              <option value="medium">Medium (serves: 2-4)</option>
+              <option value="large">Large (serves: 4-6)</option>
+              <option value="extra-large">Extra Large (serves: 6-8)</option>
+            </select>
+            <select class="form-control" id="topping-1">
+              <option value="0">Select a topping</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="sausage">Sausage</option>
+              <option value="chicken">Grilled Chicken</option>
+              <option value="bacon">Chopped Bacon</option>
+              <option value="canadian-bacon">Canadian Bacon</option>
+              <option value="beef">Ground Beef</option>
+              <option value="extra-cheese">Extra Cheese</option>
+              <option value="tomatoes">Fresh Sliced Tomatoes</option>
+              <option value="mushrooms">Mushrooms</option>
+              <option value="olives">Black Olives</option>
+              <option value="spinach">Spinach</option>
+              <option value="red-onions">Red Onions</option>
+              <option value="yellow-onions">Sweet Yellow Onions</option>
+              <option value="green-peppers">Green Bell Peppers</option>
+              <option value="jalapenos">Jalapeños</option>
+              <option value="pineapple">Pineapple</option>
+              <option value="artichokes">Artichoke Hearts</option>
+            </select>
+            <select class="form-control" id="topping-2">
+              <option value="0">Select a topping</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="sausage">Sausage</option>
+              <option value="chicken">Grilled Chicken</option>
+              <option value="bacon">Chopped Bacon</option>
+              <option value="canadian-bacon">Canadian Bacon</option>
+              <option value="beef">Ground Beef</option>
+              <option value="extra-cheese">Extra Cheese</option>
+              <option value="tomatoes">Fresh Sliced Tomatoes</option>
+              <option value="mushrooms">Mushrooms</option>
+              <option value="olives">Black Olives</option>
+              <option value="spinach">Spinach</option>
+              <option value="red-onions">Red Onions</option>
+              <option value="yellow-onions">Sweet Yellow Onions</option>
+              <option value="green-peppers">Green Bell Peppers</option>
+              <option value="jalapenos">Jalapeños</option>
+              <option value="pineapple">Pineapple</option>
+              <option value="artichokes">Artichoke Hearts</option>
+            </select>
+            <select class="form-control" id="topping-3">
+              <option value="0">Select a topping</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="sausage">Sausage</option>
+              <option value="chicken">Grilled Chicken</option>
+              <option value="bacon">Chopped Bacon</option>
+              <option value="canadian-bacon">Canadian Bacon</option>
+              <option value="beef">Ground Beef</option>
+              <option value="extra-cheese">Extra Cheese</option>
+              <option value="tomatoes">Fresh Sliced Tomatoes</option>
+              <option value="mushrooms">Mushrooms</option>
+              <option value="olives">Black Olives</option>
+              <option value="spinach">Spinach</option>
+              <option value="red-onions">Red Onions</option>
+              <option value="yellow-onions">Sweet Yellow Onions</option>
+              <option value="green-peppers">Green Bell Peppers</option>
+              <option value="jalapenos">Jalapeños</option>
+              <option value="pineapple">Pineapple</option>
+              <option value="artichokes">Artichoke Hearts</option>
+            </select>
+            <button type="submit" class="btn btn-primary btn-lg">Order!</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <div id="new-pizza"></div>
   </div>
 </body>
