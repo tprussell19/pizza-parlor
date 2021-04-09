@@ -6,8 +6,6 @@ function Pizza(size, topping1, topping2, topping3) {
   this.price = 0;
 }
 
-let newPizza = new Pizza("large", "pepperoni");
-
 Pizza.prototype.pizzaPrice = function() {
   if (this.size === "personal") {
     this.price += 10;
@@ -27,3 +25,12 @@ Pizza.prototype.pizzaPrice = function() {
   }
   return this.price;
 }
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    let newPizza = new Pizza($("#size").val());
+    newPizza.pizzaPrice();
+    $("#new-pizza").text(newPizza.price);
+  })
+})
