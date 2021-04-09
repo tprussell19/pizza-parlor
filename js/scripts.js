@@ -16,20 +16,29 @@ Pizza.prototype.pizzaPrice = function() {
   } else if (this.size === "extra-large") {
     this.price += 25;
   }
-  if (this.topping1 !== undefined) {
-    this.price += 2;
-  } else if (this.topping2 !== undefined) {
-    this.price += 2;
-  } else if (this.topping3 !== undefined) {
+  if (this.topping1 === 0) {
+    this.price += 0;
+  } else {
     this.price += 2;
   }
+  // if (this.topping2 === 0) {
+  //   this.price += 0;
+  // } else {
+  //   this.price += 2;
+  // }
+  // if (this.topping3 === 0) {
+  //   this.price += 0;
+  // } else {
+  //   this.price += 2;
+  // }
   return this.price;
 }
 
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    let newPizza = new Pizza($("#size").val());
+    let newPizza = new Pizza($("#size").val(), parseInt($("#topping-1").val()));
+    console.log(newPizza);
     newPizza.pizzaPrice();
     $("#new-pizza").text(newPizza.price);
   })
