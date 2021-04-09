@@ -27,7 +27,13 @@ Open via Bash/GitBash:
 #### Description Pizza()
 Test: "Should build a new Pizza object when given size and topping arguments"
 Code: new Pizza("large", "pepperoni", "red-onions", "green-peppers")
-Expected output: {size: "large", topping1: "pepperoni", topping2: "red-onions", topping3: "green-peppers"}
+Expected output: {size: "large", topping1: "pepperoni", topping2: "red-onions", topping3: "green-peppers", price: 0}
+
+#### Description Pizza.prototype.pizzaPrice()
+Test: "Should accurately calculate the price of a new pizza given a pizza size is selected"
+Code: let newPizza = new Pizza("large");
+Pizza.prototype.pizzaPrice(newPizza);
+Expected outcome: 20
 
 ## Known Bugs
 
