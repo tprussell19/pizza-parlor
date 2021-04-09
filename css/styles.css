@@ -1,3 +1,6 @@
+.jumbotron {
+  padding: 5%;
+}
 h2 {
   text-align: center;
 }
@@ -11,4 +14,11 @@ p {
 }
 .btn {
   margin: 5%;
+}
+.card-text p {
+  margin-left: 8%;
+  margin-bottom: 3px;
+}
+.card {
+  padding: 5%;
 }

@@ -23,11 +23,12 @@
           <form class="card-text">
             <select class="form-control" id="size">
               <option value="select">Select a size</option>
-              <option value="personal">Personal (serves: 1-2)</option>
-              <option value="medium">Medium (serves: 2-4)</option>
-              <option value="large">Large (serves: 4-6)</option>
-              <option value="extra-large">Extra Large (serves: 6-8)</option>
+              <option value="personal">Personal (serves: 1-2) $10</option>
+              <option value="medium">Medium (serves: 2-4) $15</option>
+              <option value="large">Large (serves: 4-6) $20</option>
+              <option value="extra-large">Extra Large (serves: 6-8) $25</option>
             </select>
+            <p class="card-text mt-3">All toppings: $2</p>
             <select class="form-control" id="topping-1">
               <option value="0">Select a topping</option>
               <option value="pepperoni">Pepperoni</option>
@@ -92,8 +93,14 @@
           </form>
         </div>
       </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h2 class="card-title">Thank you for your order!</h2>
+          <h5 class="card-text">Details:</h5>
+          <div id="new-pizza"></div>
+        </div>
+      </div>
     </div>
-    <div id="new-pizza"></div>
   </div>
 </body>
 </html>
