@@ -32,8 +32,14 @@ Expected output: {size: "large", topping1: "pepperoni", topping2: "red-onions", 
 #### Description Pizza.prototype.pizzaPrice()
 Test: "Should accurately calculate the price of a new pizza given a pizza size is selected"
 Code: let newPizza = new Pizza("large");
-Pizza.prototype.pizzaPrice(newPizza);
+newPizza.pizzaPrice();
 Expected outcome: 20
+
+Test: "Should accurately calculate the price of a pizza given size and topping inputs"
+Code: let newPizza = new Pizza("large", "pepperoni");
+newPizza.pizzaPrice();
+Expected outcome: 22
+
 
 ## Known Bugs
 

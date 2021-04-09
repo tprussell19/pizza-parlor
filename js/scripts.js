@@ -6,7 +6,7 @@ function Pizza(size, topping1, topping2, topping3) {
   this.price = 0;
 }
 
-let newPizza = new Pizza("large");
+let newPizza = new Pizza("large", "pepperoni");
 
 Pizza.prototype.pizzaPrice = function() {
   if (this.size === "personal") {
