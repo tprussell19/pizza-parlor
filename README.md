@@ -24,7 +24,10 @@ Open via Bash/GitBash:
 
 ## Tests/Specs
 
-
+#### Description Pizza()
+Test: "Should build a new Pizza object when given size and topping arguments"
+Code: new Pizza("large", "pepperoni", "red-onions", "green-peppers")
+Expected output: {size: "large", topping1: "pepperoni", topping2: "red-onions", topping3: "green-peppers"}
 
 ## Known Bugs
 
