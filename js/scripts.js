@@ -18,5 +18,12 @@ Pizza.prototype.pizzaPrice = function() {
   } else if (this.size === "extra-large") {
     this.price += 25;
   }
+  if (this.topping1 !== undefined) {
+    this.price += 2;
+  } else if (this.topping2 !== undefined) {
+    this.price += 2;
+  } else if (this.topping3 !== undefined) {
+    this.price += 2;
+  }
   return this.price;
 }
