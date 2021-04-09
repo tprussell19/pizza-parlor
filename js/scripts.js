@@ -21,23 +21,23 @@ Pizza.prototype.pizzaPrice = function() {
   } else {
     this.price += 2;
   }
-  // if (this.topping2 === 0) {
-  //   this.price += 0;
-  // } else {
-  //   this.price += 2;
-  // }
-  // if (this.topping3 === 0) {
-  //   this.price += 0;
-  // } else {
-  //   this.price += 2;
-  // }
+  if (this.topping2 === 0) {
+    this.price += 0;
+  } else {
+    this.price += 2;
+  }
+  if (this.topping3 === 0) {
+    this.price += 0;
+  } else {
+    this.price += 2;
+  }
   return this.price;
 }
 
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    let newPizza = new Pizza($("#size").val(), parseInt($("#topping-1").val()));
+    let newPizza = new Pizza($("#size").val(), parseInt($("#topping-1").val()), parseInt($("#topping-2").val()), parseInt($("#topping-3").val()));
     console.log(newPizza);
     newPizza.pizzaPrice();
     $("#new-pizza").text(newPizza.price);
