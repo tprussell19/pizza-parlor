@@ -8,23 +8,15 @@ function Pizza(size, topping1, topping2, topping3) {
 
 let newPizza = new Pizza("large");
 
-Pizza.prototype.pizzaPrice = function(object) {
-  this.price = object.price;
-  this.size = object.size;
-  console.log(this.price);
+Pizza.prototype.pizzaPrice = function() {
   if (this.size === "personal") {
     this.price += 10;
-    console.log(this.price);
   } else if (this.size === "medium") {
     this.price += 15;
-    console.log(this.price);
   } else if (this.size === "large") {
     this.price += 20;
-    console.log(this.price);
   } else if (this.size === "extra-large") {
     this.price += 25;
-    console.log(this.price);
   }
-  console.log(this.price);
   return this.price;
 }
