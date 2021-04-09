@@ -22,3 +22,10 @@ p {
 .card {
   padding: 5%;
 }
+#select-a-size {
+  display: none;
+  color: red;
+}
+#completed-order {
+  display: none;
+}
